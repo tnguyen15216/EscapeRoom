@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Steuerzentrale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Steuerzentrale</h2>
+    <p>
+      Die Türen zischen auf – du betrittst den zentralen Kontrollraum von NEON. 
+      Monitore flackern, unzählige Datenströme rasen über die Bildschirme. 
+      Nur ein letztes Sicherheitssystem blockiert den manuellen Shutdown. 
+      Es prüft deine Reaktionsfähigkeit und dein Erinnerungsvermögen: 
+      vier entscheidende Zahlen flackern kurz auf – vergisst du sie, bleibt NEON aktiv...
+    </p>
+  
+  <div class="story-box">
+    <p>Merke dir die Zahlenabfolge und gib sie korrekt ein:</p>
+  
+    <div class="terminal">
+      <div id="number-display"> </div>
+    </div>
+  
+    <button onclick="startSequence()">Start</button><br>
+    <input type="text" id="userInput" placeholder="Zahlenfolge eingeben">
+    <button onclick="checkSequence()">Überprüfen</button>
+    <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
