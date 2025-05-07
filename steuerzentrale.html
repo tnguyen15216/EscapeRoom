@@ -19,14 +19,16 @@
     <p>Merke dir die Zahlenabfolge und gib sie korrekt ein:</p>
   
     <div class="terminal">
-      <div id="number-display"> </div>
+      <div id="number-display"> <p id="screenText"></p> </div>
     </div>
   
-    <button onclick="startSequence()">Start</button><br>
-    <input type="text" id="userInput" placeholder="Zahlenfolge eingeben">
+    <button id="startBtn" onclick="startSequence()">Start</button><br>
+    <input type="text" id="input" placeholder="erste Zahl eingeben">
+    <input type="text" id="input2" placeholder="zweite eingeben">
+    <input type="text" id="input3" placeholder="dritte eingeben">
     <button onclick="checkSequence()">Überprüfen</button>
     <p id="result"></p>
 
-  <script src="script.js"></script>
+  <script src="steuerzentrale.js"></script>
 </body>
 </html>
