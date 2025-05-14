@@ -2,20 +2,29 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>maschinenraum</title>
+  <title>Maschinenraum</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Maschinenraum</h1>
-  <div>
-    <p>Drücke die Farb-Schalter in der richtigen Reihenfolge, um die Falle zu deaktivieren:</p>
-    <div> 
-      <button class="color-btn" id="colorbtn" value="red" style="background-color:red; color:white;">ROT</button>
-      <button class="color-btn" id="colorbtn" value="green" style="background-color:green; color:white;">GRÜN</button>
-      <button class="color-btn" id="colorbtn" value="blue" style="background-color:blue; color:white;">BLAU</button>
+<body class="maschinenraum">
+
+  <h1>Maschinenraum</h1>
+
+  <p>Drücke die Farb-Schalter in der richtigen Reihenfolge, um die Falle zu deaktivieren:</p>
+
+  <div class="button-row">
+    <div class="button-box">
+      <button class="color-btn" value="red">ROT</button>
     </div>
-    <button id="reset-btn">Neu versuchen</button>
+    <div class="button-box">
+      <button class="color-btn" value="green">GRÜN</button>
+    </div>
+    <div class="button-box">
+      <button class="color-btn" value="blue">BLAU</button>
+    </div>
   </div>
+
+  <button id="reset-btn">Neu versuchen</button>
+
   <script src="maschinenraum.js"></script>
 </body>
 </html>

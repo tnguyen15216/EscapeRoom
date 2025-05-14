@@ -5,29 +5,37 @@
   <title>Steuerzentrale</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h2>Steuerzentrale</h2>
-    <p>
-      Die Türen zischen auf – du betrittst den zentralen Kontrollraum von NEON. 
-      Monitore flackern, unzählige Datenströme rasen über die Bildschirme. 
-      Nur ein letztes Sicherheitssystem blockiert den manuellen Shutdown. 
-      Es prüft deine Reaktionsfähigkeit und dein Erinnerungsvermögen: 
-      vier entscheidende Zahlen flackern kurz auf – vergisst du sie, bleibt NEON aktiv...
-    </p>
-  
+<body class="steuerzentrale">
+
+  <h1>Steuerzentrale</h1>
+
+  <p>
+    Die Türen zischen auf – du betrittst den zentralen Kontrollraum von NEON.
+    Monitore flackern, unzählige Datenströme rasen über die Bildschirme.
+    Nur ein letztes Sicherheitssystem blockiert den manuellen Shutdown.
+    Es prüft deine Reaktionsfähigkeit und dein Erinnerungsvermögen:
+    vier entscheidende Zahlen flackern kurz auf – vergisst du sie, bleibt NEON aktiv...
+  </p>
+
   <div class="story-box">
     <p>Merke dir die Zahlenabfolge und gib sie korrekt ein:</p>
-  
+
     <div class="terminal">
-      <div id="number-display"> <p id="screenText"></p> </div>
+      <p id="screenText"></p>
     </div>
-  
-    <button id="startBtn" onclick="startSequence()">Start</button><br>
-    <input type="text" id="input" placeholder="erste Zahl eingeben">
-    <input type="text" id="input2" placeholder="zweite eingeben">
-    <input type="text" id="input3" placeholder="dritte eingeben">
+
+    <button id="startBtn" onclick="startSequence()">Start</button>
+
+    <div class="input-group">
+      <input type="number" id="input" placeholder="1. Zahl">
+      <input type="number" id="input2" placeholder="2. Zahl">
+      <input type="number" id="input3" placeholder="3. Zahl">
+    </div>
+
     <button onclick="checkSequence()">Überprüfen</button>
+
     <p id="result"></p>
+  </div>
 
   <script src="steuerzentrale.js"></script>
 </body>

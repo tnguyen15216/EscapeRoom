@@ -5,24 +5,31 @@
   <title>Compiler Raum</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Compiler-Raum</h1>
+<body class="compiler">
 
-        <p>Du betrittst einen Raum voller flackernder Bildschirme. Auf jedem laufen verschlüsselte Codezeilen in Endlosschleife.</p>
-        <p>Ein Terminal zeigt dir eine Nachricht:</p>
-        <div class="story-box">
-            „Der Quellcode wurde verschlüsselt, um das System vor unerlaubtem Zugriff zu schützen. Nur wer den Code korrekt entschlüsseln kann, darf weiter.“
-        </div>
-        <p><strong>Hinweis:</strong> Verschlüsselt nach Caesar, A → V</p>
+  <h1>Compiler-Raum</h1>
+
+  <p>
+    Du betrittst einen Raum voller flackernder Bildschirme.
+    Auf jedem laufen verschlüsselte Codezeilen in Endlosschleife.
+  </p>
+  <p>Ein Terminal zeigt dir eine Nachricht:</p>
+
+  <div class="story-box">
+    „Der Quellcode wurde verschlüsselt, um das System vor unerlaubtem Zugriff zu schützen.
+    Nur wer den Code korrekt entschlüsseln kann, darf weiter.“
+  </div>
+
+  <p><strong>Hinweis:</strong> Verschlüsselt nach Caesar, A → K</p>
 
   <div class="terminal">
     <p>Entschlüssele den folgenden Satz:</p>
-    <blockquote>"Yp fjhhno cdzm ifhgzmn mvpn"</blockquote>
-    <input type="text" id="compiler-answer" placeholder="Dein entschlüsselter Satz">
-    <button id="check-compiler">Bestätigen</button>
-    <p id="checkBtn"></p>
+    <blockquote>"Ne uywwcd rsob xsowkvc bkec."</blockquote>
+    <input type="text" id="input" placeholder="Dein entschlüsselter Satz">
+    <button onclick="checkAnswer()">Bestätigen</button>
+    <p id="result"></p>
   </div>
 
-  <script src="script.js"></script>
+  <script src="compiler.js"></script>
 </body>
 </html>

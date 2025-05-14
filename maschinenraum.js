@@ -9,7 +9,7 @@ let userSequence = [];
 // Add event listeners to buttons
 document.querySelectorAll('button').forEach(button => {
     button.addEventListener('click', (event) => {
-        // Disable the button after it is pressed
+        let rightAnswer = true;
         if (userSequence.length < correctSequence.length) {
             event.target.disabled = true;
         }
@@ -19,10 +19,16 @@ document.querySelectorAll('button').forEach(button => {
 
         // Check if the sequence matches when the length is the same
         if (userSequence.length === correctSequence.length) {
-            if (userSequence.values === correctSequence.values) {
-                alert('Correct sequence!');
-            } else {
-                alert('Wrong sequence. Try again!');
+            for (let i = 0; i < userSequence.length; i++) {
+                if (userSequence[i] !== correctSequence[i]) {
+                    rightAnswer = false;
+                    alert('Wrong sequence. Try again!');
+                    break;
+                }
+            }
+        
+            if (rightAnswer) {
+                alert('Correct!');
             }
             // Reset the user's sequence
             userSequence = [];

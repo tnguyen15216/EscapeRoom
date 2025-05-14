@@ -22,15 +22,13 @@ function startSequence() {
     document.getElementById("startBtn").disabled = true;
 }
 function checkSequence() {
-    const input = [
-        parseInt(document.getElementById("input1").value, 10),
-        parseInt(document.getElementById("input2").value, 10),
-        parseInt(document.getElementById("input3").value, 10)
-    ];
-    if (JSON.stringify(input) == JSON.stringify(answer)) {
+    const input = [];
+    input.push(Number(document.getElementById("input").value));
+    input.push(Number(document.getElementById("input2").value));
+    input.push(Number(document.getElementById("input3").value));
+    if ( input.every((val, index) => val === answer[index])) {
         alert("Correct! You may enter the room.");
-    }
-    else {
+    } else {
         alert("Incorrect! Please try again.");
     }
 }

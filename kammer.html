@@ -5,7 +5,40 @@
   <title>Verschlüsselte Kammer</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <script src="script.js"></script>
+<body class="kammer">
+
+  <h1>Verschlüsselte Kammer</h1>
+
+  <div class="story-box">
+    <p>Vor dir befinden sich mehrere digitale Türen. Nur eine davon ist echt. Die anderen führen ins Nichts.</p>
+    <p><strong>Hinweis 1:</strong> Die echte Tür ist keine Primzahl.</p>
+    <p><strong>Hinweis 2:</strong> Ihre Nummer ist durch 4 teilbar.</p>
+    <p><strong>Hinweis 3:</strong> Sie liegt zwischen 5 und 15.</p>
+  </div>
+
+  <div class="door-grid">
+    <div class="door" onclick="checkDoor(3)">3</div>
+    <div class="door" onclick="checkDoor(6)">6</div>
+    <div class="door" onclick="checkDoor(8)">8</div>
+    <div class="door" onclick="checkDoor(9)">9</div>
+    <div class="door" onclick="checkDoor(12)">12</div>
+    <div class="door" onclick="checkDoor(15)">15</div>
+  </div>
+
+  <p id="result"></p>
+
+  <script>
+    function checkDoor(number) {
+      const correctDoor = 12; // 12 erfüllt alle Hinweise
+      const result = document.getElementById("result");
+
+      if (number === correctDoor) {
+        result.textContent = "Zugang gewährt. Die Kammer löst sich auf...";
+      } else {
+        result.textContent = "Falsche Tür. Systemfehler. Versuch es erneut.";
+      }
+    }
+  </script>
+
 </body>
 </html>

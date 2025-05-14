@@ -5,25 +5,34 @@
   <title>Raum: Eingang</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Eingangsport</h1>
+<body class="eingang">
 
-    <p>Nachdem du in den dunklen Raum trittst, hörst du ein leises Summen, als die Wände langsam von schwachem grünem Licht durchzogen werden.</p>
-    <p>Vor dir öffnet sich ein holografisches Display und eine kalte Stimme ertönt:</p>
-    <div class="story-box">
-        <p>„Willkommen im Projekt NEON. Du hast das Eingangsterminal erreicht. Doch bevor du fortfahren kannst, musst du beweisen, dass du den Code der Maschinen verstehst. Nur wer in der Sprache der Neuronen spricht, darf eintreten. Hier ist deine erste Herausforderung.“</p>
-    </div>
+  <h1>Eingangsport</h1>
 
-    <p>Ein Terminal erscheint vor dir und zeigt eine einfache, aber knifflige Aufgabe:</p>
+  <p>
+    Nachdem du in den dunklen Raum trittst, hörst du ein leises Summen, als die Wände langsam von schwachem grünem Licht durchzogen werden.
+  </p>
+  <p>
+    Vor dir öffnet sich ein holografisches Display und eine kalte Stimme ertönt:
+  </p>
 
-    <div class="terminal">
-        <p><code>"1010 + 0101 = ?"</code></p>
-    </div>
-    <p>Du spürst die kühle Luft und den Druck, der auf dir lastet. Um den Raum zu betreten, musst du die Antwort auf dieses Rätsel finden.</p>
+  <div class="story-box">
+    <p>„Willkommen im Projekt NEON. Du hast das Eingangsterminal erreicht. Doch bevor du fortfahren kannst, musst du beweisen, dass du den Code der Maschinen verstehst. Nur wer in der Sprache der Neuronen spricht, darf eintreten. Hier ist deine erste Herausforderung.“</p>
+  </div>
 
-    <input type="text" id="input" placeholder="Deine Antwort">
-    <button id="checkBtn" onclick="checkAnswer()">Überprüfen</button>
+  <p>Ein Terminal erscheint vor dir und zeigt eine einfache, aber knifflige Aufgabe:</p>
+
+  <div class="terminal">
+    <p><code>"1010 + 0101 = ?"</code></p>
+  </div>
+
+  <p>Du spürst die kühle Luft und den Druck, der auf dir lastet. Um den Raum zu betreten, musst du die Antwort auf dieses Rätsel finden.</p>
+
+  <input type="text" id="input" placeholder="Deine Antwort">
+  <button id="checkBtn" onclick="checkAnswer()">Überprüfen</button>
+
+  <p id="message"></p>
 
   <script src="eingang.js"></script>
 </body>
-</html>
+</html> 
