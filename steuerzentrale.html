@@ -7,6 +7,8 @@
 </head>
 <body class="steuerzentrale">
 
+  <a href="index.html" class="back-link">← Zurück zur Übersicht</a>
+
   <h1>Steuerzentrale</h1>
 
   <p>
@@ -27,16 +29,16 @@
     <button id="startBtn" onclick="startSequence()">Start</button>
 
     <div class="input-group">
-      <input type="number" id="input" placeholder="1. Zahl">
-      <input type="number" id="input2" placeholder="2. Zahl">
-      <input type="number" id="input3" placeholder="3. Zahl">
+      <input type="number" id="input" placeholder="1. Zahl" autocomplete="off">
+      <input type="number" id="input2" placeholder="2. Zahl" autocomplete="off">
+      <input type="number" id="input3" placeholder="3. Zahl" autocomplete="off">
     </div>
 
     <button onclick="checkSequence()">Überprüfen</button>
 
-    <p id="result"></p>
   </div>
 
   <script src="steuerzentrale.js"></script>
+  <script src="addkey.js"></script>
 </body>
 </html>

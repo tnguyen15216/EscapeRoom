@@ -7,6 +7,8 @@
 </head>
 <body class="compiler">
 
+  <a href="index.html" class="back-link">← Zurück zur Übersicht</a>
+
   <h1>Compiler-Raum</h1>
 
   <p>
@@ -25,11 +27,11 @@
   <div class="terminal">
     <p>Entschlüssele den folgenden Satz:</p>
     <blockquote>"Ne uywwcd rsob xsowkvc bkec."</blockquote>
-    <input type="text" id="input" placeholder="Dein entschlüsselter Satz">
+    <input type="text" id="input" placeholder="Dein entschlüsselter Satz" autocomplete="off">
     <button onclick="checkAnswer()">Bestätigen</button>
-    <p id="result"></p>
   </div>
 
   <script src="compiler.js"></script>
+  <script src="addkey.js"></script>
 </body>
 </html>

@@ -17,9 +17,11 @@ function startSequence() {
     for(let i = 0; i < answer.length; i++) {
         setTimeout(() => {
             changeText(answer[i]);
-        }, i * 1000);
+        }, i * 250);
     }
-    document.getElementById("startBtn").disabled = true;
+    setTimeout(() => {
+        changeText("Enter the numbers in the same order!");
+    }, answer.length * 250);
 }
 function checkSequence() {
     const input = [];
@@ -28,6 +30,7 @@ function checkSequence() {
     input.push(Number(document.getElementById("input3").value));
     if ( input.every((val, index) => val === answer[index])) {
         alert("Correct! You may enter the room.");
+        addKeyOnce("steuerzentrale");
     } else {
         alert("Incorrect! Please try again.");
     }
