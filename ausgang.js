@@ -33,6 +33,7 @@ function openDoor() {
       if (allSolved) {
         alert("Du hast alle Schlüssel gesammelt! Die Tür öffnet sich...");
         localStorage.removeItem("solvedRooms");
+        location.reload();
       } else {
         alert("Dir fehlen noch Schlüssel – löse alle Räume zuerst!");
       }
