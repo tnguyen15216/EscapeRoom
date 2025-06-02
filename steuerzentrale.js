@@ -35,10 +35,10 @@ function checkSequence() {
     input.push(Number(document.getElementById("input2").value));
     input.push(Number(document.getElementById("input3").value));
     if ( input.every((val, index) => val === answer[index])) {
-        alert("Correct! You may enter the room.");
+        alert("Richtig! Du erhältst den Schlüssel für die Steuerzentrale.");
         addKeyOnce("steuerzentrale");
     } else {
-        alert("Incorrect! Please try again.");
+        alert("Falsch! Bitte versuche es erneut.");
     }
 }
 
@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const solved = JSON.parse(localStorage.getItem("solvedRooms")) || [];
 
   if (solved.includes("steuerzentrale")) {
-    alert("Du hast den Schlüssel für den Maschinenraum bereits erhalten.");
+    alert("Du hast den Schlüssel für die Steuerzentrale bereits erhalten.");
   }
 });
 

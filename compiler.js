@@ -5,12 +5,12 @@ function checkAnswer() {
     const userInput = document.getElementById("input").value;
     // Überprüfen, ob der Benutzerinput mit der Antwort übereinstimmt
     if (userInput == answer) {
-        alert("Correct!");
+        alert("Richtig ! Du erhältst den Schlüssel für den Compilerraum.");
         // Schlüssel hinzufügen
         addKeyOnce("compiler");
     }
     else {
-        alert("Incorrect! Please try again.");
+        alert("Falsch! Bitte versuche es erneut.");
     }
 }
 
@@ -19,6 +19,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const solved = JSON.parse(localStorage.getItem("solvedRooms")) || [];
 
   if (solved.includes("compiler")) {
-    alert("Du hast den Schlüssel für den Maschinenraum bereits erhalten.");
+    alert("Du hast den Schlüssel für den Compilerraum bereits erhalten.");
   }
 });

@@ -17,6 +17,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const solved = JSON.parse(localStorage.getItem("solvedRooms")) || [];
 
   if (solved.includes("kammer")) {
-    alert("Du hast den Schlüssel für den Maschinenraum bereits erhalten.");
+    alert("Du hast den Schlüssel für die Verschlüsselte Kammer bereits erhalten.");
   }
 });

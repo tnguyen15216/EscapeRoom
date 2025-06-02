@@ -6,12 +6,12 @@ function checkAnswer() {
 
     // Überprüfen, ob der Benutzerinput mit der Antwort übereinstimmt
     if (userInput == answer) {
-        alert("Correct!");
+        alert("Richtig! Du erhältst den Schlüssel für den Eingangsport.");
         // Schlüssel hinzufügen, wenn die Antwort korrekt ist
         addKeyOnce("eingang");
     }
     else {
-        alert("Incorrect! Please try again.");
+        alert("Falsch! Bitte versuche es erneut.");
     }
 }
 
@@ -20,6 +20,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const solved = JSON.parse(localStorage.getItem("solvedRooms")) || [];
 
   if (solved.includes("eingang")) {
-    alert("Du hast den Schlüssel für den Maschinenraum bereits erhalten.");
+    alert("Du hast den Schlüssel für den Eingangsport bereits erhalten.");
   }
 });
