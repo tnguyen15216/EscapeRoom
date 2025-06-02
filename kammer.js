@@ -6,7 +6,7 @@ function checkDoor(guardian) {
   if (guardian === correct) {
     alert('Richtig! Wächter B trägt den echten Schlüssel. Du erhältst den Schlüssel.');
     // Funktion zum Hinzufügen des Schlüssels
-    addKey('kammer'); // optional: Schlüssel im Inventory markieren
+    addKeyOnce('kammer'); // optional: Schlüssel im Inventory markieren
   } else {
     alert('Falsch! Dieser Wächter lügt. Versuche es noch einmal.');
   }
