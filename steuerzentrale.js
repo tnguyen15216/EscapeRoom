@@ -42,4 +42,13 @@ function checkSequence() {
     }
 }
 
+// Funktion zum Testen, ob der Schlüssel bereits erhalten wurde
+window.addEventListener("DOMContentLoaded", () => {
+  const solved = JSON.parse(localStorage.getItem("solvedRooms")) || [];
+
+  if (solved.includes("steuerzentrale")) {
+    alert("Du hast den Schlüssel für den Maschinenraum bereits erhalten.");
+  }
+});
+
 

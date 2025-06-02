@@ -50,3 +50,13 @@ resetBtn.addEventListener('click', () => {
 function arraysEqual(a, b) {
   return a.length === b.length && a.every((val, i) => val === b[i]);
 }
+
+// Funktion zum Testen, ob der Schlüssel bereits erhalten wurde
+window.addEventListener("DOMContentLoaded", () => {
+  const solved = JSON.parse(localStorage.getItem("solvedRooms")) || [];
+
+  if (solved.includes("maschinenraum")) {
+    alert("Du hast den Schlüssel für den Maschinenraum bereits erhalten.");
+  }
+});
+

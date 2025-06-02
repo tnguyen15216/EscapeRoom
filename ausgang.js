@@ -32,6 +32,7 @@ function openDoor() {
       const allSolved = requiredRooms.every(room => solved.includes(room));
       if (allSolved) {
         alert("Du hast alle Schlüssel gesammelt! Die Tür öffnet sich...");
+        localStorage.removeItem("solvedRooms");
       } else {
         alert("Dir fehlen noch Schlüssel – löse alle Räume zuerst!");
       }
