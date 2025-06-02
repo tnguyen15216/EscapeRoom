@@ -1,9 +1,12 @@
+// Antwort
 var answer = [];
 
+// Funktion zum ändern des Textes auf dem Bildschirm
 function changeText(number) {
     document.getElementById("screenText").innerHTML = number;
 }
 
+// Funktion zum Erzeugen einer zufälligen Zahlenfolge
 function randomNumber() {
     const arr = [];
     for (i = 0; i < 3; i++) {
@@ -12,6 +15,7 @@ function randomNumber() {
     return arr;
 }
 
+// Funktion zum Starten der Sequenz
 function startSequence() {
     answer = randomNumber();
     for(let i = 0; i < answer.length; i++) {
@@ -23,6 +27,8 @@ function startSequence() {
         changeText("Enter the numbers in the same order!");
     }, answer.length * 250);
 }
+
+// Funktion zum Überprüfen der Sequenz
 function checkSequence() {
     const input = [];
     input.push(Number(document.getElementById("input").value));
